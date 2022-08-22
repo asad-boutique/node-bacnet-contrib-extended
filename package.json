@@ -23,5 +23,8 @@
         "type": "git",
         "url": "https://github.com/asad-boutique/node-bacnet-contrib-extended.git"
     },
-    "homepage": "https://github.com/asad-boutique/node-bacnet-contrib-extended/blob/main/README.md"
+    "homepage": "https://github.com/asad-boutique/node-bacnet-contrib-extended/blob/main/README.md",
+    "publishConfig": {
+        "access": "public"
+      }
 }
