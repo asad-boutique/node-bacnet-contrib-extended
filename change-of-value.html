@@ -3,24 +3,60 @@
         category: 'DND',
         color: '#a6bbcf',
         defaults: {
-            name: {value:""}
+            name: {value:""},
+            address: {value:""},
+            inputType: {value:""},
+            bacnetId: {value:""},
+            COVtimeout: {value:"120000"},
         },
         inputs:1,
         outputs:1,
         icon: "file.png",
         label: function() {
             return this.name||"change-of-value";
+        },
+        oneditprepare: function () {
+            let node = this;
         }
     });
 </script>
 
 <script type="text/html" data-template-name="change-of-value">
+
+
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
+
+        <br><br>
+
+        <label for="node-input-address"><i class="fa fa-tag"></i> address</label>
+        <input type="text" id="node-input-address" placeholder="192.168.20.243">
+
+        <br><br>
+
+        <label for="node-input-inputType"><i class="fa fa-tag"></i> inputType</label>
+        <input type="text" id="node-input-inputType" placeholder="4">
+
+        <br><br>
+
+        <label for="node-input-bacnetId"><i class="fa fa-tag"></i> bacnetId</label>
+        <input type="text" id="node-input-bacnetId" placeholder="9">
+
+        <label for="node-input-COVtimeout"><i class="fa fa-tag"></i> COVtimeout</label>
+        <input type="text" id="node-input-COVtimeout" placeholder="12000">
+
+        <br><br>
+
     </div>
+
+    
+
+
 </script>
 
 <script type="text/html" data-help-name="change-of-value">
    
+    
+
 </script>

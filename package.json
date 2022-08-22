@@ -16,7 +16,7 @@
     "dependencies": {
         "node-bacnet": "^0.2.4"
     },
-	"keywords": [ "node-red", "node-red-bacnet" ],
+	"keywords": [ "node-red", "node-red-bacnet", "bacnet-COV", "bacnet-change-of-value" ],
     "author": "Asad Shoaib",
 	"license": "MIT",
     "repository": {
