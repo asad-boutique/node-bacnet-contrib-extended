@@ -1,0 +1,39 @@
+<script type="text/javascript">
+    RED.nodes.registerType('read-single-point',{
+        category: 'DND',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"read-single-point";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="read-single-point">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="read-single-point">
+    
+    <p> 
+
+        The read-single-point node would read the data of the single node or object, it would take inputType, bacnetId and address as an input arguments via a function node.
+
+        example -> {
+            msg.inputType = 3;
+            msg.bacnetId = 8;
+            msg.address = "192.168.20.242";
+        }
+        
+
+    </p>
+
+</script>

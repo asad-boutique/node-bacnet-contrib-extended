@@ -1,0 +1,22 @@
+{
+    "name": "@asad/node-bacnet-contrib-extended",
+	"version": "0.0.1",
+    "node-red": {
+        "nodes": {
+            "discover-devices": "discover-devices.js",
+            "read-single-point": "read-single-point.js",
+            "read-single-device": "read-single-device.js",
+            "read-all-devices": "read-all-devices.js",
+            "change-of-value": "change-of-value.js",
+            "write-a-value": "write-a-value.js",
+            "read-objects-list-within-device": "read-objects-list-within-device.js",
+            "read-object-properties": "read-object-properties.js"
+        }
+    },
+    "dependencies": {
+        "node-bacnet": "^0.2.4"
+    },
+	"keywords": [ "node-red", "node-red-bacnet" ],
+    "author": "Asad Shoaib",
+	"license": "MIT"
+}

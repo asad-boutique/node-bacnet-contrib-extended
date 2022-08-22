@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    RED.nodes.registerType('read-all-devices',{
+        category: 'DND',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"read-all-devices";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="read-all-devices">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="read-all-devices">
+    <p> 
+
+        The read-all-devices node would read the complete data of all the available bacnet devices on the network.
+
+    </p>
+</script>

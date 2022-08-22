@@ -1,0 +1,41 @@
+<script type="text/javascript">
+    RED.nodes.registerType('read-object-properties',{
+        category: 'DND',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"read-object-properties";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="read-object-properties">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="read-object-properties">
+   
+    <p> 
+
+        The read-object-properties node would take requestArray as an argument including inputType, bacnetID and read all the object properties defined within requestArray. 
+
+        example -> {
+            
+            const requestArray = [
+            { objectId: { type: msg.inputType, instance: msg.bacnetID }, properties: bacnetProperties }
+            ];
+
+            msg.requestArray = requestArray  
+
+        }
+    </p>
+
+</script>
