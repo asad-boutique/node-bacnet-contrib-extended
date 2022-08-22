@@ -1,5 +1,5 @@
 {
-    "name": "@asad/node-bacnet-contrib-extended",
+    "name": "node-bacnet-contrib-extended",
 	"version": "0.0.1",
     "node-red": {
         "nodes": {
