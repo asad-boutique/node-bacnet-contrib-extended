@@ -18,5 +18,10 @@
     },
 	"keywords": [ "node-red", "node-red-bacnet" ],
     "author": "Asad Shoaib",
-	"license": "MIT"
+	"license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/asad-boutique/node-bacnet-contrib-extended.git"
+    },
+    "homepage": "https://github.com/asad-boutique/node-bacnet-contrib-extended/blob/main/README.md"
 }
