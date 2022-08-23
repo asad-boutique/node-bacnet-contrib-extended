@@ -1,5 +1,8 @@
-# Installation
+## Installation
 Install this package as a pallette by using node red dashboard
+
+#### if NodeRED runs under Docker
+You have to bind the container to the host network
 
 ## License
 
