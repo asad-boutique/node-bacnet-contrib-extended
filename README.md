@@ -1,5 +1,8 @@
-# Installation
+## Installation
 Install this package as a pallette by using node red dashboard
+
+#### if NodeRED runs under Docker
+If yes then discover-devices and read-all-devices nodes would not work properly until you run your docker container in a host network mode on a linux machine, keep in mind that the host network mode is not supported on apple macbooks!
 
 ## License
 
