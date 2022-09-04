@@ -1,8 +1,12 @@
 ## Installation
 Install this package as a pallette by using node red dashboard
 
-#### if NodeRED runs under Docker
+#### Running Node-Red As a Docker Container
 If yes then discover-devices and read-all-devices nodes would not work properly until you run your docker container in a host network mode on a linux machine, keep in mind that the host network mode is not supported on apple macbooks!
+
+### For Usage examples and detailed documentation, visit the following link
+
+https://www.hellgeeks.com/how-to-use-node-red-plugin-node-bacnet-contrib-extended-to-read-bacnet-devices/
 
 ## License
 
