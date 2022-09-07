@@ -90,7 +90,25 @@ module.exports = function(RED) {
 
 
 
-          if(msg.inputType == "" || msg.inputType == null || typeof msg.inputType != 'number'){
+
+         if (msg.inputType == undefined) {
+
+
+          try{
+            bacnetClient.close();
+            console.log('closed transport ' + Date.now());
+          } 
+          catch(e){
+            console.log("exception -> ", e);
+          }
+
+          msg.payload = "inputType is invalid 0";
+          node.send(msg);
+          return;
+      
+          }
+      
+          if (msg.inputType == null) {
 
             try{
               bacnetClient.close();
@@ -99,13 +117,32 @@ module.exports = function(RED) {
             catch(e){
               console.log("exception -> ", e);
             }
-
-            
-
-            msg.payload = "inputType is invalid";
-            node.send(msg);
-            return;
+      
+          msg.payload = "inputType is invalid 1";
+          node.send(msg);
+          return;
+      
           }
+      
+          if (typeof msg.inputType != 'number') {
+
+            try{
+              bacnetClient.close();
+              console.log('closed transport ' + Date.now());
+            } 
+            catch(e){
+              console.log("exception -> ", e);
+            }           
+      
+          msg.payload = "inputType is invalid 2";
+          node.send(msg);
+          return;
+      
+          }
+
+
+
+
 
           if(msg.bacnetId == "" || msg.bacnetId == null || typeof msg.bacnetId != 'number'){
 
