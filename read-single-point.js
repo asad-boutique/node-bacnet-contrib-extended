@@ -225,7 +225,7 @@ module.exports = function(RED) {
 
           var v1 = null;
 
-          if (object.values[j].value[0]?.value){
+          if (object.values[j].value[0]?.value != undefined && object.values[j].value[0]?.value != null){
 
              v1 = object.values[j].value[0].value;
 

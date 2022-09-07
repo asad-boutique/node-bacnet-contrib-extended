@@ -1,6 +1,6 @@
 {
     "name": "node-bacnet-contrib-extended",
-	"version": "0.1.3",
+	"version": "0.1.4",
     "node-red": {
         "nodes": {
             "discover-devices": "discover-devices.js",
