@@ -62,7 +62,7 @@ module.exports = function(RED) {
 
 
 
-        console.log("test 000");
+       // console.log("test 000");
 
 
           var bacnetClient = new Bacnet({ 
@@ -85,7 +85,7 @@ module.exports = function(RED) {
             }, msg.transportClosedDuration);
 
 
-          console.log("bacnetClient 222-> ", bacnetClient)
+         // console.log("bacnetClient 222-> ", bacnetClient)
 
 
 
@@ -142,7 +142,7 @@ module.exports = function(RED) {
 
 
 
-          console.log("test 111");
+         // console.log("test 111");
 
 
           let inputType = msg.inputType;
@@ -190,7 +190,7 @@ module.exports = function(RED) {
 
 
 
-          console.log("test 222");
+         // console.log("test 222");
 
 
 
@@ -212,7 +212,7 @@ module.exports = function(RED) {
 
         var myArray = {};
 
-        console.log("object.values -> ", object.values);
+        //console.log("object.values -> ", object.values);
 
 
         for(var j = 0; j < object.values.length; j++){
