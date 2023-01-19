@@ -1,6 +1,6 @@
 {
     "name": "node-bacnet-contrib-extended",
-	"version": "0.1.6",
+	"version": "0.2.0",
     "node-red": {
         "nodes": {
             "discover-devices": "discover-devices.js",
@@ -8,7 +8,7 @@
             "read-single-device": "read-single-device.js",
             "read-all-devices": "read-all-devices.js",
             "change-of-value": "change-of-value.js",
-            "write-a-value": "write-a-value.js",
+            "write-object-property": "write-object-property.js",
             "read-objects-list-within-device": "read-objects-list-within-device.js",
             "read-object-properties": "read-object-properties.js"
         }
